@@ -1,0 +1,145 @@
+div.dashboard
+{
+	display: flex;
+}
+div.dashboard > div.col-1
+{
+	box-sizing: border-box;
+	width: 50%;
+	padding-right: 30px;
+}
+div.dashboard > div.col-1 > div.notifications_ajax > table.notifications
+{
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 12px;
+}
+div.dashboard > div.col-1 > div.notifications_ajax > table.notifications > thead > tr > th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	padding: 4px 8px;
+	background-color: #222d32;
+	color: white;
+}
+div.dashboard > div.col-1 > div.notifications_ajax > table.notifications > tbody > tr > td
+{
+	padding: 4px 8px;
+	background-color: white;
+}
+div.dashboard > div.col-2
+{
+	box-sizing: border-box;
+	width: 50%;
+	height: 700px;
+	border-bottom: 2px solid #dee2e8;
+}
+div.dashboard > div.col-1 > div.notifications_ajax > div.empty
+{
+	font-style: italic;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary
+{
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div
+{
+	box-sizing: border-box;
+	padding: 14px 14px 16px;
+	flex: 1 1 152px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div:not(:last-of-type)
+{
+	margin-right: 16px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div:hover
+{
+	cursor: pointer;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, .25);
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div > div.label
+{
+	/*font-weight: 600;*/
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div > div.value
+{
+	font-size: 36px;
+	font-weight: 900;
+	margin-top: 4px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div.created
+{
+	background-color: cornflowerblue;
+	color: white;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div.assigned
+{
+	background-color: lightyellow;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div.implementation
+{
+	background-color: green;
+	color: white;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > div.summary > div.assignee_review
+{
+	background-color: mediumpurple;
+	color: white;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks
+{
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 12px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > thead > tr > th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #222d32;
+	color: white;
+	box-sizing: border-box;
+	padding: 4px 8px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > thead > tr > th.id
+{
+	width: 56px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > thead > tr > th.name
+{
+	width: 440px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > thead > tr > th.status
+{
+	width: 100px;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > tbody > tr > td
+{
+	padding: 4px 8px;
+	background-color: white;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > tbody > tr > td.status.created
+{
+	background-color: cornflowerblue;
+	color: white;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > tbody > tr > td.status.assigned
+{
+	background-color: lightyellow;
+	color: black;
+}
+div.dashboard > div.col-1 > div.tasks_ajax > table.tasks > tbody > tr > td.status.reviewed_by_author
+{
+	background-color: mediumpurple;
+	color: white;
+}

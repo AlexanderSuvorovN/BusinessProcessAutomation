@@ -1,0 +1,18 @@
+footer
+{
+	box-sizing: border-box;
+	height: var(--footer-height);
+	padding: 20px;
+	background-color: white;
+	color: #333;
+	border-top: 1px solid #d2d6de;
+	margin-top: auto;
+}
+footer > span.bold
+{
+	font-weight: 900;
+}
+footer > span.light
+{
+	font-weight: 100;
+}

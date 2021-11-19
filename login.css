@@ -1,0 +1,155 @@
+body
+{
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	background-color: #d2d6de;
+}
+body > div.abstract
+{
+	flex: 1 1 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/login_bg.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+body > div.abstract > div.center
+{
+}
+body > div.abstract > div.center > div.smart-teams
+{
+	font-size: 35px;
+	color: white;
+	margin-bottom: 25px;
+	font-weight: 300;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, .25);	
+}
+body > div.abstract > div.center > div.smart-teams > span.bold
+{
+	font-weight: 800;
+}
+body > div.abstract > div.center > div.smart-teams > span.light
+{
+	font-weight: 100;
+}
+body > div.abstract > div.center > div.form
+{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 24px;
+}
+body > div.abstract > div.center > div.form > div.caption
+{
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 20px;
+}
+body > div.abstract > div.center > div.form > div.inputs
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 12px;
+}
+body > div.abstract > div.center > div.form > div.inputs > input
+{
+	display: block;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	text-shadow: none;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	font-weight: 400;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+body > div.abstract > div.center > div.form > div.inputs > input:not(:last-of-type)
+{
+	margin-bottom: 12px;
+}
+body > div.abstract > div.center > div.form > div.inputs > input:focus
+{
+	border-color: #3c8dbc;
+	box-shadow: none;
+	outline: none;
+}
+body > div.abstract > div.center > div.form > div.controls
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+body > div.abstract > div.center > div.form > div.controls > div.remember
+{
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+}
+body > div.abstract > div.center > div.form > div.controls > div.remember > div.checkbox
+{
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .75);
+}
+body > div.abstract > div.center > div.form > div.controls > div.remember > div.checkbox:hover
+{
+	border-color: #3c8dbc;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, .25) inset;
+}
+body > div.abstract > div.center > div.form > div.controls > div.remember > div.checkbox > div.tick
+{
+	width:  75%;
+	height: 75%;
+	box-sizing: border-box;
+	background-image: url('/images/icon-check.svg');
+	background-size: cover;
+}
+body > div.abstract > div.center > div.form > div.controls > button
+{
+	display: block;
+	padding: 6px 20px;
+	border: 1px solid transparent;
+	background-color: #3c8dbc;
+	cursor: pointer;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+}
+body > div.abstract > div.center > div.form > div.controls > button:hover
+{
+	background-color: #367fa9;
+	border-color: #204d74;
+}
+body > div.abstract > div.center > div.form > div.links
+{
+	display: flex;
+	flex-direction: column;
+}
+body > div.abstract > div.center > div.form > div.links > a
+{
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #3c8dbc;
+	margin-bottom: 4px;
+}
+body > div.abstract > div.center > div.form > div.links > a:hover
+{
+	color: #72afd2;
+}

@@ -1,0 +1,368 @@
+/*
+*
+* Tasks panel controls
+*
+*/
+div.view > div.controls
+{
+	display: flex;
+	align-items: flex-end;
+}
+div.view > div.controls > div.fieldset
+{
+	margin-right: 24px;
+}
+div.view > div.controls > div.fieldset > div.label
+{
+	font-weight: 600;
+	padding: 4px 0px;
+}
+div.view > div.controls > div.fieldset > div.value > *
+{
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 4px;
+}
+div.view > div.controls > button 
+{
+	margin-left: auto;
+}
+/*
+*
+* Tasks table
+*
+*/
+table
+{
+	font-size: 12px;
+	width: 100%;
+	margin-top: 14px;
+}
+th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	padding: 4px 8px;
+	background-color: #222d32;
+	color: white;
+}
+th:first-of-type
+{
+	padding-left: 0;
+}
+td
+{
+	padding: 4px 8px;
+	background-color: white;
+}
+th:first-of-type
+{
+	padding-left: 0;
+}
+table.tasks > tbody > tr > td.task_status
+{
+}
+table.tasks > tbody > tr > td.task_status.created
+{
+	background-color: cornflowerblue;
+	/*background-color: deepskyblue;*/
+	color: white;
+}
+table.tasks > tbody > tr > td.task_status.assigned
+{
+	background-color: lightyellow;
+}
+table.tasks > tbody > tr > td.task_status.declined
+{
+	background-color: lightpink;
+}
+table.tasks > tbody > tr > td.task_status.completed
+{
+	background-color: green;
+	color: white;
+}
+table.tasks > tbody > tr > td.task_status.reviewed_by_author,
+table.tasks > tbody > tr > td.task_status.reviewed_by_assignee
+{
+	background-color: mediumpurple;
+	color: white;
+}
+table.tasks > tbody > tr > td.task_status.closed
+{
+	background-color: gray;
+	color: white;
+}
+table.tasks > tbody > tr > td.task_author > div.profile
+{
+	background-color: #f7f7f7;
+	border: 1px #ddd solid;
+	display: flex;
+	align-items: center;
+}
+table.tasks > tbody > tr > td.task_author > div.profile > div.avatar
+{
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-position: center;
+	margin-right: 8px;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile > div.name
+{
+	font-size: 12px;
+	padding-right: 8px;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile > div.name > div.lastname
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile
+{
+	background-color: #f7f7f7;
+	border: 1px #ddd solid;
+	display: flex;
+	align-items: center;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile > div.avatar
+{
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-position: center;
+	margin-right: 8px;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile > div.name
+{
+	font-size: 12px;
+	padding-right: 8px;
+}
+table.tasks > tbody > tr > td.task_assignees > div.profile > div.name > div.lastname
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+table.tasks > tbody > tr > td.task_terms > div
+{
+	display: flex;
+	align-items: center;
+}
+table.tasks > tbody > tr > td.task_terms > div > div.icon
+{
+	background-color: #f7f7f7;
+	border: 1px #ddd solid;
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	font-weight: 600;
+	margin-right: 8px;
+}
+table.tasks > tbody > tr > td.task_terms > div.task_date_begin > div.icon
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	background-image: url('/images/ui/icon.start.png');
+	background-size: cover;
+	background-position: center;
+}
+table.tasks > tbody > tr > td.task_terms > div.task_date_end > div.icon
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	background-image: url('/images/ui/icon.finish.png');
+	background-size: cover;
+	background-position: center;
+}
+table.tasks > tbody > tr > td.task_terms > div.task_date_completed > div.icon
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	background-image: url('/images/ui/icon.complete.jpg');
+	background-size: cover;
+	background-position: center;
+}
+table.tasks > tbody > tr > td.task_terms > div > div.text
+{
+}
+table.tasks > tbody > tr > td.controls
+{
+}
+table.tasks > tbody > tr > td.controls > button
+{
+	display: block;
+	cursor: pointer;
+}
+table.tasks > tbody > tr > td.task_comments 
+{
+	text-align: center;
+}
+table.tasks > tbody > tr > td.task_comments > button.active
+{
+	cursor: pointer;
+}
+div.ajax > div.empty
+{
+	box-sizing: border-box;
+	padding: 8px;
+	padding-left: 0px;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 14px;
+}
+/*
+*
+* Add task window
+*
+*/
+div.window_task_add
+{
+	width: 920px;
+}
+div.window > div.body
+{
+	box-sizing: border-box;
+	padding: 32px;
+	background-color: white;
+}
+div.window > div.body input,
+div.window > div.body select,
+div.window > div.body textarea
+{
+	display: block;
+	box-sizing: border-box;
+	width: 100%;	
+}
+div.window > div.body button
+{
+	cursor: pointer;
+}
+div.window > div.body > div.fieldset
+{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin-bottom: 16px;
+}
+div.window > div.body > div.fieldset > span
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+div.window > div.body > div.controls
+{
+	display: flex;
+	justify-content: space-between;
+}
+div.window > div.body > div.controls > button
+{
+	display: block;
+}
+/*
+*/
+div.window_task_add > div.fieldset > div.selected_candidates
+{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin-bottom: 16px;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile
+{
+	flex: 1 1 auto;
+	background-color: #f7f7f7;
+	border: 1px #ddd solid;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 8px;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile > div.avatar
+{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+	background-position: center;
+	margin-right: 8px;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile > div.info
+{
+	flex: 1 1 auto;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile > div.info > div.name
+{
+	font-size: 12px;
+	padding-right: 8px;
+	display: flex;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile > div.info > div.name > span.lastname
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+div.window_task_add > div.fieldset > div.selected_candidates > div.profile > div.button_close
+{
+	display: block;
+	box-sizing: border-box;
+	width: 8px;
+	height: 8px;
+	flex: 0 0 auto;
+	background-image: url('/images/ui/window.titlebar.button_close.black.png');
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+/*
+*/
+div.window_task_add > div.fieldset > div.dateset
+{
+	display: flex;
+}
+div.window_task_add > div.fieldset > div.dateset > input.date
+{
+	display: block;
+	box-sizing: border-box;
+	width: 100px;
+	margin-right: 8px;
+}
+div.window_task_add > div.fieldset > div.dateset > button.pick
+{
+	display: block;
+	box-sizing: border-box;
+	width: 22px;
+	height: 22px;
+	background-color: #ccc;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #888;
+	border-radius: 4px;
+}
+div.window_task_add > div.fieldset > div.dateset > button.pick.date
+{
+	background-image: url('/images/ui/icon.calendar.png');
+	margin-right: 24px;
+}
+div.window_task_add > div.fieldset > div.dateset > button.pick.time
+{
+	background-image: url('/images/ui/icon.clock.2.png');
+}
+div.window_task_add > div.fieldset > div.dateset > input.time
+{
+	width: 80px;
+	margin-right: 8px;
+}
+
+.nj-picker .nj-picker-container
+{
+	z-index: 101;
+}

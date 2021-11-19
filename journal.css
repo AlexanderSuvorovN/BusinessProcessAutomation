@@ -1,0 +1,413 @@
+div.controls
+{
+	display: flex;
+}
+div.controls > div.fieldset 
+{
+	margin-right: 14px;
+}
+div.controls > div.fieldset > div.label
+{
+	font-weight: 600;
+}
+div.controls > div.fieldset.month > div.value
+{
+	display: flex;
+	align-items: center;
+}
+div.controls > div.fieldset.month > div.value > button
+{
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+}
+div.controls > div.fieldset.month > div.value > button.prev
+{
+	background-image: url('/images/ui/icon.prev.png');
+}
+div.controls > div.fieldset.month > div.value > button.next
+{
+	background-image: url('/images/ui/icon.next.png');
+}
+div.journal_ajax
+{
+	margin-top: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+div.journal_ajax > div.journal
+{
+	display: flex;
+}
+div.journal_ajax > div.journal > div.item
+{
+	box-sizing: border-box;
+	width: 42px;
+	margin-right: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	border: 1px solid transparent;
+}
+div.journal_ajax > div.journal > div.item:hover
+{
+	/*box-shadow: 0px 0px 12px rgba(0, 0, 0, .25);*/
+	/*position: relative;*/
+	/*top: -4px;*/
+	border: 1px solid gold;
+}
+div.journal_ajax > div.journal > div.item > div
+{
+	text-align: center;
+}
+div.journal_ajax > div.journal > div.item > div.date
+{
+	border: 1px solid darkgrey;
+	border-radius: 4px;
+	font-size: 12px;
+	padding: 8px 8px 8px;
+	background-color: ghostwhite;
+	cursor: pointer;
+}
+div.journal_ajax > div.journal > div.item.weekend > div.date
+{
+	background-color: lightgrey;
+}
+div.journal_ajax > div.journal > div.item > div.date > div.day
+{
+	margin-top: 4px;
+}
+div.journal_ajax > div.criteria > div.grades
+{
+	display: flex;
+}
+div.journal_ajax > div.criteria > h3
+{
+	font-family: "Roboto";
+	font-weight: 400;
+}
+div.journal_ajax > div.criteria > div.grades > div.item
+{
+	box-sizing: border-box;
+	width: 42px;
+	margin-right: 4px;
+	text-align: center;
+	border: 1px solid darkgrey;
+	padding: 8px;
+	background-color: white;
+	border-radius: 4px;	
+	cursor: pointer;
+	position: relative;
+}
+div.journal_ajax > div.criteria > div.grades > div.item.grade-1
+{
+	background-color: darkred;
+	color: white;
+}
+div.journal_ajax > div.criteria > div.grades > div.item.grade-2
+{
+	background-color: red;
+	color: white;
+}
+div.journal_ajax > div.criteria > div.grades > div.item.grade-3
+{
+	background-color: wheat;
+}
+div.journal_ajax > div.criteria > div.grades > div.item.grade-4
+{
+	background-color: palegreen;
+}
+div.journal_ajax > div.criteria > div.grades > div.item.grade-5
+{
+	background-color: green;
+	color: white;
+}
+div.journal_ajax > div.criteria > div.grades > div.item > div.attachments
+{
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	background-image: url('/images/ui/icon.attachment.3.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	bottom: -4px;
+	left: -4px;
+	/*background-color: white;*/
+	/*border-radius: 50%;*/
+	/*border: 1px solid lightgrey;*/
+}
+div.journal_ajax > div.criteria > div.grades > div.item > div.comment
+{
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	background-image: url('/images/ui/icon.comment.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	bottom: -4px;
+	right: -4px;
+	background-color: white;
+	/*border-radius: 50%;*/
+	/*border: 1px solid lightgrey;*/
+}
+div.journal_ajax > div.chart
+{
+	box-sizing: border-box;
+	height: 400px;
+	background-color: white;
+	margin-top: 14px;
+	border: 1px solid lightgrey;
+	/*border-radius: 4px;*/
+}
+/*
+*
+* Grades window
+*
+*/
+div.st_modal_overlay > div.window
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 32px;
+	width: 860px;
+	resize: both;
+}
+div.st_modal_overlay > div.window > div.caption
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(96, 92, 168);
+	padding: 6px 6px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+div.st_modal_overlay > div.window > div.caption > div.icon
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	flex: 0 0 auto;
+	margin-right: 8px;
+	background-image: url('/images/ui/icon.info.svg');
+	background-size: cover;
+	background-position: center;
+}
+div.st_modal_overlay > div.window > div.caption > div.text
+{
+	color: white;
+}
+div.st_modal_overlay > div.window > div.caption > div.close
+{
+	box-sizing: border-box;
+	width: 10px;
+	height: 10px;
+	flex: 0 0 auto;
+	background-image: url("/images/ui/icon.close.white.png");
+	background-size: cover;
+	background-position: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+div.st_modal_overlay > div.window > div.body
+{
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background-color: white;	
+}
+div.st_modal_overlay > div.window > div.body > div.controls
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+div.st_modal_overlay > div.window > div.body > div.controls > div.button
+{
+	box-sizing: border-box;
+	min-width: 66px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset:not(:first-of-type)
+{
+	margin-top: 14px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset > div.label
+{
+	font-weight: 600;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset > div.value
+{
+	margin-top: 8px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.comment > div.value > div
+{
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid lightgrey;
+	/*border-radius: 4px;*/
+	padding: 0px 8px;
+	min-height: 30px;
+	background-color: #f0f0f0;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.criteria > div.value
+{
+	display: flex;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.criteria > div.value > input
+{
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	align-items: center;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.criteria > div.value > button
+{
+	box-sizing: border-box;
+	width: 22px;
+	height: 22px;
+	margin-left: 8px;
+	cursor: pointer;
+	background-image: url('/images/ui/icon.find.2.png');
+	background-position: center;
+	background-size: cover;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value
+{
+	display: flex;
+	flex-direction: column;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.date > div.value
+{
+	display: flex;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.date > div.value > div.icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	background-image: url('/images/ui/icon.calendar.png');
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades
+{
+	display: flex;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item
+{
+	padding: 8px;
+	border: 1px solid darkgrey;
+	cursor: pointer;
+	margin-right: 4px;
+	background-color: lightgrey;
+	/*border-radius: 4px;*/
+	/*font-size: 28px;*/
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item.set:nth-of-type(1)
+{
+	background-color: darkred;
+	color: white;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item.set:nth-of-type(2)
+{
+	background-color: red;
+	color: white;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item.set:nth-of-type(3)
+{
+	background-color: wheat;	
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item.set:nth-of-type(4)
+{
+	background-color: palegreen;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades > div.item.set:nth-of-type(5)
+{
+	background-color: green;
+	color: white;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.grade > div.value > div.grades.disabled > div.item
+{
+	cursor: default;	
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment
+{
+	display: flex;
+	align-items: center;
+	background-color: #f0f0f0;
+	border: 1px solid lightgrey;
+	/*border-radius: 4px;*/
+	padding: 4px 8px;
+	margin-bottom: 8px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment.input
+{
+	padding: 0px;
+	padding-right: 8px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment.remove
+{
+	display: none;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment > input[type="file"]
+{
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment > div.filename
+{
+	margin-right: 8px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > div.attachment > div.remove
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	background-image: url('/images/ui/icon.remove.2.png');	
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	margin-left: auto;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.value > input[type="file"]
+{
+	margin-bottom: 8px;
+}
+div.st_modal_overlay > div.window > div.body > div.fieldset.attachments > div.controls
+{
+}
+/*
+*
+* Set criteria window
+*
+*/
+div.st_modal_overlay > div.window.criteria
+{
+	width: 420px;
+}
+div.st_modal_overlay > div.window.criteria > div.body > div.fieldset.criterias > div.value
+{
+	max-height: 800px;
+	overflow: scroll;
+}
+div.st_modal_overlay > div.window.criteria > div.body > div.fieldset.criterias > div.value > div.item
+{
+	box-sizing: border-box;
+	border: 1px solid darkgrey;
+	border-radius: 4px;
+	padding: 8px;
+	cursor: pointer;
+	margin-top: 4px;
+}
+div.st_modal_overlay > div.window.criteria > div.body > div.fieldset.criterias > div.value > div.item:hover
+{
+	background-color: royalblue;
+	color: white;
+}

@@ -1,0 +1,327 @@
+html
+{
+	height: 100vh;
+}
+body
+{
+	box-sizing: border-box;
+	height: 100vh;
+	/*font-family: "Oswald", sans-serif;*/
+	/*font-family: "Roboto", sans-serif;*/
+	font-family: "Source Sans Pro", sans-serif;
+	/*font-family: "Open Sans", sans-serif;*/
+	/*font-family: "Montserrat", sans-serif;*/
+	/*font-family: "Roboto Condensed", sans-serif;*/
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	background-color: #ecf0f5;
+	line-height: 1;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	--header-height: 60px;
+	--footer-height: 55px;
+}
+h1
+{
+	font-weight: 900;
+	color: #222d32;
+}
+p
+{
+	line-height: 1.5;
+}
+ul
+{
+	list-style-type: square;
+}
+li
+{
+	margin: 8px 0px;
+}
+button 
+{
+	cursor: pointer;
+}
+main
+{
+	box-sizing: border-box;
+	height: calc(100vh - var(--header-height) - var(--footer-height));
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+main > div.view
+{
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	padding: 16px 32px;
+	overflow: scroll;
+}
+main > div.view > h2
+{
+	font-family: "Roboto";
+	font-weight: 400;
+}
+main > div.view > h2:first-of-type
+{
+}
+main > div.view > h3
+{
+	font-family: "Roboto";
+	font-weight: 300;
+}
+main > div.view > div.breadcrumb 
+{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	padding: 4px 0px;
+}
+main > div.view > div.breadcrumb > *
+{
+	display: block;
+	margin: 0px 2px;
+	color: #888;
+}
+main > div.view > div.breadcrumb > a
+{
+	text-decoration: none;
+}
+main > div.view > div.breadcrumb > a:hover
+{
+	color: #605ca8;
+	text-decoration: underline;
+}
+main > div.view > div.breadcrumb > a:first-of-type
+{
+	margin-left: 0;
+}
+main > div.view > div.breadcrumb > span.separator 
+{
+}
+main > div.view > div.breadcrumb > span.current
+{
+}
+main > div.view > div.breadcrumb > a:first-of-type > img
+{
+	display: block;
+	width: 18px;
+	height: 18px;
+}
+main > div.view > div.breadcrumb > a:last-of-type > img
+{
+	display: block;
+	width: 18px;
+	height: 16px;
+}
+div.profile
+{
+	display: flex;
+	align-items: stretch;
+}
+div.profile > div.avatar
+{
+	box-sizing: border-box;
+	width: 48px;
+	height: 48px;
+	background-size: cover;
+	background-position: center;
+	margin-right: 8px;
+	position: relative;
+}
+div.profile > div.avatar > div.status
+{
+	position: absolute;
+	right: -4px;
+	bottom: -4px;
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	background-color: #ccc;	
+	background-size: cover;
+	background-position: center;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+div.profile > div.avatar > div.status.online
+{
+	background-color: green;
+}
+div.profile > div.avatar > div.status.away
+{
+	background-color: wheat;	
+}
+div.profile > div.avatar > div.status.offline
+{
+	background-color: #ccc;	
+}
+div.profile > div.info
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+div.profile > div.info > div.name > span.lastname
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+/*
+*
+* ST Modal Overlay
+*
+*/
+body > div.st_modal_overlay
+{
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+/*
+*
+* Timepicker
+*
+*/
+div.timepicker
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 32px
+}
+div.timepicker > div.caption
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(96, 92, 168);
+}
+div.timepicker > div.caption
+{
+	padding: 6px 6px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+div.timepicker > div.caption > div.icon
+{
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	flex: 0 0 auto;
+	margin-right: 8px;
+	background-size: cover;
+	background-position: center;
+}
+div.timepicker > div.caption > div.icon.info
+{
+	background-image: url('/images/ui/icon.info.svg');
+}
+div.timepicker > div.caption > div.text
+{
+	color: white;
+}
+div.timepicker > div.caption > div.button
+{
+	box-sizing: border-box;
+	width: 10px;
+	height: 10px;
+	flex: 0 0 auto;
+	background-size: cover;
+	background-position: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+div.timepicker > div.caption > div.button.close
+{	
+	background-image: url("/images/ui/icon.close.white.png")
+}
+div.timepicker > div.body
+{
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background-color: white;	
+}
+div.timepicker > div.body > div.display
+{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 14px;
+}
+div.timepicker > div.body > div.display > input
+{
+	text-align: center;
+}
+div.timepicker > div.body > div.display > input[name='hh']
+{
+	width: 40px;
+	margin-right: 8px;
+}
+div.timepicker > div.body > div.display > input[name='mm']
+{
+	width: 40px;
+}
+div.timepicker > div.body > input[type='range']
+{
+	cursor: pointer;
+}
+div.timepicker > div.body > div.label
+{
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+div.timepicker > div.body > div.label.mm
+{
+	margin-top: 8px;
+}
+div.timepicker > div.body > div.quick
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+}
+div.timepicker > div.body > div.quick > div
+{
+	border: 1px solid #ccc;	
+	text-align: center;
+	box-sizing: border-box;
+	padding: 2px;
+	cursor: pointer;
+}
+div.timepicker > div.body > div.quick > div:hover
+{
+	background-color: rgb(96, 92, 168);
+	color: white;
+}
+div.timepicker > div.body > div.quick.hh > div
+{
+	width: calc((100% - 7 * 2px) / 8);
+}
+div.timepicker > div.body > div.quick.mm > div
+{
+	width: calc((100% - 7 * 3px) / 4);
+}
+div.timepicker > div.body > div.controls
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+div.timepicker > div.body > div.controls > button
+{
+	box-sizing: border-box;
+	min-width: 66px;
+}

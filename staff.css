@@ -1,0 +1,47 @@
+table
+{
+
+}
+th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	padding: 4px 8px;	
+}
+th:first-of-type
+{
+	padding-left: 0;
+}
+#employees 
+{
+	box-sizing: border-box;
+	/*width: 100%;*/
+}
+#departments td,
+#employees td,
+#roles td
+{
+	padding: 4px 8px;
+	vertical-align: middle;
+}
+#departments td:nth-of-type(1),
+#employees td:nth-of-type(1),
+#roles td:nth-of-type(1)
+{
+	padding-left: 0;
+}
+#employees div.avatar
+{
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-position: center;
+	/*border: 50%;*/
+	border: 1px solid #b8c7ce;
+}
+#employees td:nth-of-type(4)
+{
+	text-transform: uppercase;
+}

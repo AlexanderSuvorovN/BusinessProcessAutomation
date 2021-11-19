@@ -1,0 +1,90 @@
+div.sidebar
+{
+	box-sizing: border-box;
+	width: 230px;
+	background-color: #222d32;
+}
+div.sidebar > div.profile
+{
+	box-sizing: border-box;
+	padding: 12px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	white-space: nowrap;
+}
+div.sidebar > div.profile > div.avatar
+{
+	box-sizing: border-box;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	margin-right: 12px;
+	border: 1px solid #b8c7ce;
+}
+div.sidebar > div.profile > div.info
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+div.sidebar > div.profile > div.info > div.name > span.lastname
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.sidebar > div.profile > div.info > div.status
+{
+	margin-top: 4px;
+}
+div.sidebar > div.profile > div.info > div.status > span.text
+{
+	text-transform: lowercase;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 4px 8px;
+	display: block;
+}
+div.sidebar > div.profile > div.info > div.status.online > span.text
+{
+	background-color: green;
+}
+div.sidebar > div.nav > a.navitem
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 12px;
+	text-decoration: none;
+	color: #b8c7ce;
+	font-size: 14px;
+	font-weight: 400;
+	white-space: nowrap;
+}
+div.sidebar > div.nav > a.navitem:hover
+{
+	background-color: #1e282c;
+	color: white;
+}
+div.sidebar > div.nav > a.navitem.active
+{
+	background-color: #1e282c;
+	color: white;	
+}
+div.sidebar > div.nav > a.navitem > img
+{
+	width: 20px;
+	margin-right: 12px;
+}
+div.sidebar > div.nav > a.navitem > span
+{
+	display: inline-block;
+}
