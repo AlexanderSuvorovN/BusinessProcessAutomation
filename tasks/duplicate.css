@@ -1,0 +1,130 @@
+div.controls
+{
+	box-sizing: border-box;
+	width: 920px;
+	display: flex;
+	justify-content: space-between;
+}
+div.task_data
+{
+	box-sizing: border-box;
+	width: 920px;
+	margin-top: 14px;
+}
+div.task_data > div.field
+{
+	margin: 14px 0px;
+}
+div.task_data > div.field > div.label
+{
+	box-sizing: border-box;
+	padding: 0px 0px;
+	font-weight: 600;
+}
+div.task_data > div.field > div.value
+{
+	box-sizing: border-box;
+	margin-top: 6px;
+}
+div.task_data > div.field > div.value > input
+{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 8px;
+	border: 2px solid #dee2e8;
+	border-radius: 4px;
+}
+div.task_data > div.field.description > div.value
+{
+	padding: 0px;
+	border: none;
+}
+div.task_data > div.field.date > div.value
+{
+	background-color: transparent;
+	display: flex;
+	border: none;
+}
+div.task_data > div.field.date > div.value > div.date
+{
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+div.task_data > div.field.date > div.value > div.date > div.icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	/*background-color: #ccc;*/
+	background-image: url('/images/ui/icon.calendar.png');	
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+	cursor: pointer;
+}
+div.task_data > div.field.date > div.value > div.date > input
+{
+	display: block;
+	box-sizing: border-box;
+	width: 120px;
+	padding: 8px 8px;
+	border: 2px solid #dee2e8;
+	border-radius: 4px;
+	text-align: center;
+}
+div.task_data > div.field.date > div.value > div.time
+{
+	display: flex;
+	align-items: center;
+}
+div.task_data > div.field.date > div.value > div.time > div.icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	/*background-color: #ccc;*/
+	background-image: url('/images/ui/icon.clock.2.png');
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+	cursor: pointer;
+}
+div.task_data > div.field.date > div.value > div.time > input
+{
+	display: block;
+	box-sizing: border-box;
+	width: 120px;
+	padding: 8px 8px;
+	border: 2px solid #dee2e8;
+	border-radius: 4px;
+	text-align: center;
+}
+div.task_data > div.field.assignees > div.value > div.profile:not(:first-of-type)
+{
+	margin-top: 6px;
+}
+div.task_data > div.field.assignees > div.value > div.profile
+{
+	background-color: white;
+	border: 2px solid #dee2e8;
+	border-radius: 4px;
+}
+div.task_data > div.field.assignees > div.value > div.profile > div.info
+{
+	flex: 1 1 auto;
+}
+div.task_data > div.field.assignees > div.value > div.profile > div.button_close
+{
+	display: block;
+	box-sizing: border-box;
+	width: 8px;
+	height: 8px;
+	flex: 0 0 auto;
+	background-image: url('/images/ui/window.titlebar.button_close.black.png');
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-right: 8px;
+}

@@ -1,0 +1,303 @@
+div.task_info
+{
+	box-sizing: border-box;
+	width: 920px;
+	margin-top: 14px;
+}
+div.tabs
+{
+	display: flex;
+	border-bottom: 1px solid #888;
+}
+div.tabs > div
+{
+	box-sizing: border-box;
+	padding: 6px 8px;
+	background-color: #dee2e8;
+	border: 1px solid #888;
+	border-bottom: none;
+	margin-right: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+div.tabs > div:hover
+{
+	cursor: pointer;
+}
+div.tabs > div.active
+{
+	background-color: white;
+}
+div.task_info > div.tab_content > div.field
+{
+	margin: 14px 0px;
+}
+div.task_info > div.tab_content > div.field > div.label
+{
+	box-sizing: border-box;
+	padding: 0px 0px;
+	font-weight: 600;
+	text-decoration: none;
+}
+div.task_info > div.tab_content > div.field > div.value
+{
+	box-sizing: border-box;
+	padding: 8px 8px;
+	background-color: #dee2e8;
+	/*border: 1px solid #888;*/
+	margin-top: 6px;
+	border-radius: 4px;
+}
+div.task_info > div.tab_content > div.field.description > div.value > div.empty
+{
+	box-sizing: border-box;
+	height: 64px;
+	display: flex;
+	align-items: center;
+}
+div.task_info > div.tab_content > div.field.date > div.value
+{
+	display: flex;
+	/*background-color: transparent;*/
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.date
+{
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.date > div.icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	/*background-color: #ccc;*/
+	background-image: url('/images/ui/icon.calendar.png');	
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.date > div.text
+{
+	box-sizing: border-box;
+	width: 120px;
+	padding: 8px 12px;
+	/*background-color: #dee2e8;*/
+	/*border-radius: 4px;*/
+	/*text-align: right;*/
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.time
+{
+	display: flex;
+	align-items: center;
+	margin-right: 14px;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.time > div.icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	/*background-color: #ccc;*/
+	background-image: url('/images/ui/icon.clock.2.png');
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.time > div.text
+{
+	box-sizing: border-box;
+	width: 120px;
+	padding: 8px 12px;
+	/*background-color: #dee2e8;*/
+	/*border-radius: 4px;*/
+	/*text-align: right;*/
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.date.empty > div.icon
+{
+	opacity: .5;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.date.empty > div.text
+{
+	color: #bbb;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.time.empty > div.icon
+{
+	opacity: .5;
+}
+div.task_info > div.tab_content > div.field.date > div.value > div.time.empty > div.text
+{
+	color: #bbb;
+}
+div.task_info > div.tab_content > div.field.status > div.value
+{
+}
+div.task_info > div.tab_content > div.field.assignees > div.value > div.profile:not(:first-of-type)
+{
+	margin-top: 6px;
+}
+div.task_info > div.tab_content > div.field.assignees > div.value > div.empty
+{
+	box-sizing: border-box;
+	height: 64px;
+	display: flex;
+	align-items: center;
+}
+
+
+div.tab_content.comments > div.comments
+{
+}
+div.tab_content.comments > div.comments > div.comment
+{
+	border: 1px solid #ccc;
+}
+div.tab_content.comments > div.comments > div.comment:not(:last-of-type)
+{
+	margin-bottom: 12px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption
+{
+	display: flex;
+	background-color: #dee2e8;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 8px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption > div.datetime
+{
+	box-sizing: border-box;
+	padding: 8px 8px;
+	display: flex;
+	margin-right: 24px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption > div.datetime > div.date_icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	background-image: url('/images/ui/icon.calendar.png');
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption > div.datetime > div.date_text
+{
+	margin-right: 10px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption > div.datetime > div.time_icon
+{
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	background-image: url('/images/ui/icon.clock.2.png');
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+}
+div.tab_content.comments > div.comments > div.comment > div.comment_caption > div.author
+{
+	flex: 1 1 auto;
+}
+div.tab_content.comments > div.comments > div.comment >  div.comment_body
+{
+	box-sizing: border-box;
+	padding: 8px 8px;
+	background-color: white;
+	/*border: 1px solid #dee2e8;*/
+	/*border-top: none;*/
+}
+div.tab_content.comments > div.new_comment
+{
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+}
+div.tab_content.comments > div.new_comment > div.label
+{
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+div.tab_content.comments > div.new_comment > div.editor > textarea
+{
+	box-sizing: border-box;
+	width: 100%;
+}
+div.tab_content.comments > div.new_comment > div.controls 
+{
+	display: flex;
+	justify-content: flex-end;
+}
+/*
+*
+* Tab author review
+*
+*/
+div.tab_content.author_review > div.controls
+{
+	margin-top: 16px;
+	display: flex;
+}
+div.tab_content.author_review > div.controls > button
+{
+	margin-left: auto;	
+}
+div.tab_content.reviews > div.field > div.value.text
+{
+	min-height: 6em;
+}
+div.tab_content.author_review > div.field.author_comment > div.editor
+{
+	margin-top: 6px;
+}
+/*
+*
+* Tab assignee review
+*
+*/
+div.tab_content.assignee_review > div.controls
+{
+	margin-top: 16px;
+	display: flex;
+}
+div.tab_content.assignee_review > div.controls > button
+{
+	margin-left: auto;	
+}
+div.tab_content.assignee_review > div.field.assignee_comment > div.editor
+{
+	margin-top: 6px;
+}
+div.tab_content.assignee_review > div.assignee_rate > div.label
+{
+	font-weight: 600;
+}
+div.tab_content.assignee_review > div.assignee_rate > div.smart_rating > table > tbody > tr > td.label
+{
+	/*font-weight: 600;*/
+}
+/*
+*
+* Star rating
+*
+*/
+.value > div.stars_rating
+{
+	display: flex;
+}
+.value > div.stars_rating > div.starbox
+{
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('/images/ui/icon.star.empty.png');
+}
+.value > div.stars_rating.editable > div.starbox:hover
+{
+	cursor: pointer;
+}
+.value > div.stars_rating > div.starbox.set
+{
+	background-image: url('/images/ui/icon.star.set.png');
+}
