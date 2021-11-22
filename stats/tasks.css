@@ -1,0 +1,127 @@
+div.controls
+{
+	display: flex;
+	align-items: flex-end;
+}
+div.controls > div.fieldset 
+{
+	margin-right: 14px;
+}
+div.controls > div.fieldset > div.label
+{
+	font-weight: 600;
+}
+div.controls > div.fieldset > div.value
+{
+	display: flex;
+	align-items: center;
+	margin-top: 6px;
+}
+div.ajax
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	margin-top: 6px;
+}
+div.ajax > div.empty
+{
+	box-sizing: border-box;
+	padding: 8px;
+	padding-left: 0px;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 14px;
+}
+div.ajax > table
+{
+	font-size: 12px;
+	width: 100%;
+	/*margin-top: 14px;*/
+	box-sizing: border-box;
+}
+div.ajax > table > thead > tr > th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	padding: 4px 8px;
+	background-color: #222d32;
+	color: white;
+	text-align: right;
+	white-space: nowrap;
+}
+div.ajax > table > thead > tr > th:first-of-type
+{
+	/*padding-left: 0;*/
+	text-align: left;
+}
+div.ajax > table > tbody > tr > td
+{
+	padding: 8px 8px;
+	background-color: white;
+	vertical-align: top;
+	text-align: right;
+}
+div.ajax > table > tbody > tr > td:first-of-type
+{
+	/*padding-left: 0;*/
+	text-align: left;
+}
+div.ajax > table > tbody > tr > td.user
+{
+}
+div.ajax > table > tbody > tr > td.user > div.profile
+{
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.photo
+{
+	box-sizing: border-box;
+	width: 84px;
+	height: 84px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.photo > div.status
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	border: 2px solid white;
+	background-color: lightgrey;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.photo > div.status.online
+{
+	background-color: green;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.photo > div.status.offline
+{
+	background-color: lightgrey;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.name
+{
+	margin-top: 6px;
+}
+div.ajax > table > tbody > tr > td.user > div.profile > div.role
+{
+	margin-top: 6px;
+}
+div.ajax > table > tbody > tr > td.chart
+{
+	display: flex;
+	justify-content: center;
+}
+div.ajax > table > tbody> tr > td.chart > div.canvas
+{
+	box-sizing: border-box;
+	width: 450px;
+}

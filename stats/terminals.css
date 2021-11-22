@@ -1,0 +1,155 @@
+div.controls
+{
+	display: flex;
+	align-items: flex-end;
+}
+div.controls > div.fieldset 
+{
+	margin-right: 14px;
+}
+div.controls > div.fieldset > div.label
+{
+	font-weight: 600;
+}
+div.controls > div.fieldset.date > div.value
+{
+	display: flex;
+	align-items: center;
+}
+div.controls > div.fieldset.date > div.value > input
+{
+	margin-right: 2px;
+}
+div.controls > div.fieldset.date > div.value > button
+{
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	background-image: url('/images/ui/icon.calendar.png');
+	background-size: cover;
+	background-position: center;
+	border: 1px solid lightgrey;
+	background-color: white;
+}
+div.controls > div.fieldset.date > div.value > button:hover
+{
+	border-color: grey;
+}
+div.ajax
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+div.ajax > div.empty
+{
+	box-sizing: border-box;
+	padding: 8px;
+	padding-left: 0px;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 14px;
+}
+div.ajax > div.summary
+{
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 14px;
+}
+div.ajax > div.summary > div
+{
+	flex: 1 1 auto;
+	font-size: 12px;
+	padding: 8px;
+}
+div.ajax > div.summary > div:not(:last-of-type)
+{
+	margin-right: 8px;
+}
+div.ajax > div.summary > div.start
+{
+	background-color: #fff3cd;
+	border: 1px solid #ffd554;
+}
+div.ajax > div.summary > div.end
+{
+	background-color: #fff3cd;
+	border: 1px solid #ffd554;
+}
+div.ajax > div.summary > div.work
+{
+	background-color: #cce5ff;
+	border: 1px solid #b8daff;
+}
+div.ajax > div.summary > div.active
+{
+	background-color: #d4edda;
+	border: 1px solid #c3e6cb;
+}
+div.ajax > div.summary > div.idle
+{
+	background-color: #f8d7da;
+	border: 1px solid #f5c6cb;
+}
+div.ajax > div.summary > div > div.label
+{
+	font-weight: 600;
+}
+div.ajax > div.summary > div > div.value
+{
+	margin-top: 4px;
+}
+div.ajax > div.chart
+{
+	box-sizing: border-box;
+	height: 400px;
+	background-color: white;
+	border: 1px solid lightgrey;
+	margin-top: 14px;
+}
+div.ajax > table
+{
+	font-size: 12px;
+	width: 100%;
+	margin-top: 14px;
+	box-sizing: border-box;
+	table-layout: fixed;
+}
+div.ajax > table > thead > tr > th
+{
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+	padding: 4px 8px;
+	background-color: #222d32;
+	color: white;
+}
+div.ajax > table > thead > tr > th:first-of-type
+{
+	/*padding-left: 0;*/
+}
+div.ajax > table > tbody > tr > td
+{
+	padding: 4px 8px;
+	background-color: white;
+	vertical-align: top;
+}
+div.ajax > table > tbody> tr > td:first-of-type
+{
+	/*padding-left: 0;*/
+}
+div.ajax > table > tbody > tr > td.type
+{
+	white-space: nowrap;
+}
+div.ajax > table > tbody > tr > td.application_name
+{
+	white-space: nowrap;
+}
+div.ajax > table > tbody > tr > td.details
+{
+	overflow: hidden;
+}
